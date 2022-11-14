@@ -1,6 +1,6 @@
 # go_language_practice
 
-- [변수, 상수](#변수,상수)
+- [변수, 상수](#변수-상수)
 
 ## 데이터 타입(자료형) + 변수를 먼저 배우는 이유
 - 데이터 저장/조회(관리)
@@ -8,7 +8,7 @@
 
 의 근간이 되기 떄문이다.
 
-## 변수, 상수
+## 변수 상수
 > [type.go](https://github.com/FDongFDong/go_language_practice/blob/main/type/type.go)
 ___
 ## 포인터
