@@ -7,32 +7,32 @@
 의 근간이 되기 떄문이다.
 
 ## 변수, 상수
-[type.go]()
+> [type.go](https://github.com/FDongFDong/go_language_practice/blob/main/type/type.go)
 ___
 ## 포인터
-[pointer.go]()
+> [pointer.go](https://github.com/FDongFDong/go_language_practice/blob/main/pointer/pointer.go)
 ___
 ## 함수
-[function.go]()
+> [function.go](https://github.com/FDongFDong/go_language_practice/blob/main/function/func.go)
 ___
 ## 조건문
-[if.go]()
+> [if.go](https://github.com/FDongFDong/go_language_practice/blob/main/if/if.go)
 ___
 ## 반복문
-[forloop.go]()
+> [forloop.go](https://github.com/FDongFDong/go_language_practice/blob/main/forloop/for.go)
 ___
 ## 자료구조(문자열, 배열)
-[structure.go]()
+> [structure.go](https://github.com/FDongFDong/go_language_practice/blob/main/structure/data_structure.go)
 ___
 ## marshal, unMarshal
-[json]()
+> [json](https://github.com/FDongFDong/go_language_practice/blob/main/json/json.go)
 ___
 ## Core Source를 이용한 Explorer 개발
 - Block event 데이터 처리하기
 [go-ethereum/ethclient](https://github.com/ethereum/go-ethereum/tree/master/ethclient)
 [go-ethereum/core/types](https://github.com/ethereum/go-ethereum/tree/master/core/types)
 
-> [BlockListner.go]()
+> [BlockListner.go](https://github.com/FDongFDong/go_language_practice/tree/main/explorer)
 
 - Block 정보 가져오기
 - Transaction 정보 가져오기
