@@ -7,7 +7,7 @@
 - [반복문](#반복문)
 - [자료구조](#자료구조---문자열-배열)
 - [marshal, unMarshal](#marshal-unMarshal)
-- [Core Source를 이용한 Explorer 개발](#Core-Source를-이용한-Explorer-개발)
+- [Ethereum Core Source를 이용한 Explorer 개발](#Ethereum-Core-Source를-이용한-Explorer-개발)
 
 ## 데이터 타입(자료형) + 변수를 먼저 배우는 이유
 - 데이터 저장/조회(관리)
@@ -36,7 +36,7 @@ ___
 ## marshal unMarshal
 > [json](https://github.com/FDongFDong/go_language_practice/blob/main/json/json.go)
 ___
-## Core Source를 이용한 Explorer 개발
+## Ethereum Core Source를 이용한 Explorer 개발
 - Block event 데이터 처리하기
 [go-ethereum/ethclient](https://github.com/ethereum/go-ethereum/tree/master/ethclient)
 [go-ethereum/core/types](https://github.com/ethereum/go-ethereum/tree/master/core/types)
