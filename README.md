@@ -35,6 +35,8 @@ ___
 > [const1.go]()
 
 > [const2.go]()
+> [enumeration1.go]()
+> [enumeration2.go]()
 
 - 기본 초기화
   - 정수 타입: 0,
