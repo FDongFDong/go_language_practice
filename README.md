@@ -1,6 +1,5 @@
 # go_language_practice
 
-- [go\_language\_practice](#go_language_practice)
   - [Go 언어 장점 및 특징](#go-언어-장점-및-특징)
   - [변수 및 상수](#변수-및-상수)
   - [제어문 및 반복문](#제어문-및-반복문)
