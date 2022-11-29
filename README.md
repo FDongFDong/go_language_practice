@@ -83,7 +83,9 @@ ___
 ### switch
 
 > [switch1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section3/switch1.go)
+> 
 > [switch2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section3/switch2.go)
+> 
 > [switch3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section3/switch3.go)
 
 - Switch 키위드 뒤 표현식(Expression) 생략 가능
@@ -138,7 +140,9 @@ ___
 
 ## 초기화 메소드(init)
 > [init1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section4/init1.go)
+> 
 > [init2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section4/init2.go)
+> 
 > [init3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section4/init3.go)
 
 - init : 패키지 로드 시에 가장 먼저 호출된다.
