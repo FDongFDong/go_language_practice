@@ -29,19 +29,21 @@ ___
 
 ## 변수 및 상수
 
-> [variable1.go]()
+> [variable1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section2/variable1.go)
 >
-> [variable2.go]()
+> [variable2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section2/variable2.go)
 >
-> [variable3.go]()
+> [variable3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section2/variable3.go)
 >
-> [const1.go]()
+> [const1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section2/const1.go)
 >
-> [const2.go]()
+> [const2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section2/const2.go)
 >
-> [enumeration1.go]()
+> [enumeration1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section2/enumeration1.go)
 >
-> [enumeration2.go]()
+> [enumeration2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section2/enumeration2.go)
+>
+> [enumeration3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section2/enumeration3.go)
 
 - 기본 초기화
   - 정수 타입: 0,
@@ -65,17 +67,19 @@ ___
 ## 제어문 및 반복문
 ### if 
 
-> [if1.go]()
-> [if2.go]()
-> [if3.go]()
+> [if1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section3/if1.go)
+>
+> [if2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section3/if2.go)
+>
+> [if3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section3/if3.go)
 
 - 괄호는 if문 뒤에 둬야한다.
 
 ### switch
 
-> [switch1.go]()
-> [switch2.go]()
-> [switch3.go]()
+> [switch1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section3/switch1.go)
+> [switch2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section3/switch2.go)
+> [switch3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section3/switch3.go)
 
 - Switch 키위드 뒤 표현식(Expression) 생략 가능
 - case 뒤 표현식(Expression) 사용 가능
@@ -83,9 +87,9 @@ ___
 - Type 분기 -> 값이 아닌 변수 Type으로 분기 가능
 
 ### for
-> [for1.go]()
-> [for2.go]()
-> [for3.go]()
+> [for1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section3/for1.go)
+> [for2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section3/for2.go)
+> [for3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section3/for3.go)
 
 - while, do while문이 없다.
 - Go에서 유일하게 제공되는 반복문
