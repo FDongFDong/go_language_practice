@@ -3,10 +3,13 @@
 - [go\_language\_practice](#go_language_practice)
   - [Go 언어 장점 및 특징](#go-언어-장점-및-특징)
   - [변수 및 상수](#변수-및-상수)
-  - [변수 상수](#변수-상수)
-  - [포인터](#포인터)
-  - [함수](#함수)
+  - [제어문 및 반복문](#제어문-및-반복문)
+    - [if](#if)
+    - [switch](#switch)
+    - [for](#for)
   - [조건문](#조건문)
+  - [함수](#함수)
+  - [조건문](#조건문-1)
   - [반복문](#반복문)
   - [자료구조 - 문자열 배열](#자료구조---문자열-배열)
   - [marshal unMarshal](#marshal-unmarshal)
@@ -27,15 +30,17 @@ ___
 ## 변수 및 상수
 
 > [variable1.go]()
-
+>
 > [variable2.go]()
-
+>
 > [variable3.go]()
-
+>
 > [const1.go]()
-
+>
 > [const2.go]()
+>
 > [enumeration1.go]()
+>
 > [enumeration2.go]()
 
 - 기본 초기화
@@ -57,13 +62,39 @@ ___
 - 열거형
   - 상수를 사용하는 일정한 규칙에 따라 숫자를 계산하거나 증가시키는 묶음
 
-## 변수 상수
+## 제어문 및 반복문
+### if 
 
-> [type.go](https://github.com/FDongFDong/go_language_practice/blob/main/type/type.go)
+> [if1.go]()
+> [if2.go]()
+> [if3.go]()
+
+- 괄호는 if문 뒤에 둬야한다.
+
+### switch
+
+> [switch1.go]()
+> [switch2.go]()
+> [switch3.go]()
+
+- Switch 키위드 뒤 표현식(Expression) 생략 가능
+- case 뒤 표현식(Expression) 사용 가능
+- 자동 break 때문에 fallthrough 존재
+- Type 분기 -> 값이 아닌 변수 Type으로 분기 가능
+
+### for
+> [for1.go]()
+> [for2.go]()
+> [for3.go]()
+
+- while, do while문이 없다.
+- Go에서 유일하게 제공되는 반복문
+- 다양한 사용법 숙지 필요
+
+
 ___
 
-## 포인터
-
+## 조건문
 > [pointer.go](https://github.com/FDongFDong/go_language_practice/blob/main/pointer/pointer.go)
 ___
 
