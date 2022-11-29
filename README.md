@@ -9,6 +9,7 @@
     - [for](#for)
   - [패키지](#패키지)
   - [접근제어 및 Alias](#접근제어-및-alias)
+  - [초기화 메소드(init)](#초기화-메소드init)
   - [함수](#함수)
   - [조건문](#조건문)
   - [반복문](#반복문)
@@ -89,7 +90,9 @@ ___
 
 ### for
 > [for1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section3/for1.go)
+>
 > [for2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section3/for2.go)
+>
 > [for3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section3/for3.go)
 
 - while, do while문이 없다.
@@ -114,9 +117,11 @@ ___
 - Go : main 패키지는 특별하게 인식 -> 컴파일러 공유 라이브러리 x, 프로그램의 시작점 start point
 
 ___
+
 ## 접근제어 및 Alias
 
 > [access1.go]()
+> 
 > [access2.go]()
 
 - 패키지 접근제어
@@ -126,10 +131,14 @@ ___
 - 별칭 사용
 - 빈 식별자 사용
 
-
 ___
 
-> [pointer.go](https://github.com/FDongFDong/go_language_practice/blob/main/pointer/pointer.go)
+## 초기화 메소드(init)
+
+- init : 패키지 로드 시에 가장 먼저 호출된다.
+- 가장 먼저 초기화 되는 작업 작성 시 유용하다.
+- init()는 여러개 있어도 컴파일된다. 
+- 다른 패키지에 있으면 해당 패키지에 있는 init함수가 가장 먼지 실행된다.
 ___
 
 ## 함수
