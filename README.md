@@ -108,9 +108,9 @@ ___
 
 ## 패키지
 
-> [package1.go]()
+> [package1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section4/package1.go)
 >
-> [package2.go]()
+> [package2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section4/package2.go)
 
 - 패키지 : 코드 구조화(모듈화) 및 재사용
 - 응집도, 결합도 
@@ -124,9 +124,9 @@ ___
 
 ## 접근제어 및 Alias
 
-> [access1.go]()
+> [access1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section4/access1.go)
 > 
-> [access2.go]()
+> [access2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section4/access2.go)
 
 - 패키지 접근제어
 - 변수, 상수, 함수, 메서드, 구조체 등 식별자
@@ -138,6 +138,9 @@ ___
 ___
 
 ## 초기화 메소드(init)
+> [init1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section4/init1.go)
+> [init2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section4/init2.go)
+> [init3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section4/init3.go)
 
 - init : 패키지 로드 시에 가장 먼저 호출된다.
 - 가장 먼저 초기화 되는 작업 작성 시 유용하다.
@@ -151,18 +154,21 @@ ___
 
 ### Bool
 
-> [bool1.go]()
+> [bool1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section5/bool1.go)
 > 
-> [bool2.go]()
+> [bool2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section5/bool2.go)
 
 - Bool(Boolean) : 참과 거짓
 - 조건부 논리 연산자랑 주로 사용 : !, ||(or), &&(and)
 - 암묵적 형변환이 안된다. : 0, Nil -> False 변환 없음
 
 ### 숫자형 기초
-> [numeric1.go]()
-> [numeric2.go]()
-> [numeric3.go]()
+
+> [numeric1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section5/numeric1.go)
+>
+> [numeric2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section5/numeric2.go)
+>
+> [numeric3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section5/numeric3.go)
 
 - 데이터 타입 : 숫자형
 - 정수, 실수, 복소수
@@ -171,6 +177,12 @@ ___
 
 ### 숫자형 연산
 
+> [number_operation1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section5/number_operation1.go)
+>
+> [number_operation2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section5/number_operation2.go)
+>
+> [number_operation3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section5/number_operation3.go)
+
 - 숫자 연산(산술, 비교)
 - 타입이 같아야 가능하다.
 - 다른 타입끼리는 반드시 형 변환 후 연산
@@ -178,6 +190,10 @@ ___
 - +, -, *, %, /, <<, >>, &, ^
 
 ### 문자열 기초
+
+> [string1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section5/string1.go)
+> 
+> [string2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section5/string2.go)
 
 - 큰 따옴표로 감싼다 "" 또는 백스쿼트 ``
 - Golang : 문자 char 타입 존재하지 않음 -> rune(int32)로 문자 코드 값으로 표현
