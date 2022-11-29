@@ -8,6 +8,7 @@
     - [switch](#switch)
     - [for](#for)
   - [패키지](#패키지)
+  - [접근제어 및 Alias](#접근제어-및-alias)
   - [함수](#함수)
   - [조건문](#조건문)
   - [반복문](#반복문)
@@ -112,6 +113,21 @@ ___
 - 네이밍 규칙 : 소문자 private, 대문자 : public
 - Go : main 패키지는 특별하게 인식 -> 컴파일러 공유 라이브러리 x, 프로그램의 시작점 start point
 
+___
+## 접근제어 및 Alias
+
+> [access1.go]()
+> [access2.go]()
+
+- 패키지 접근제어
+- 변수, 상수, 함수, 메서드, 구조체 등 식별자
+- 첫글자가 대문자 : 패키지 외부에서 접근가능
+- 첫글자가 소문자 : 패키지 외부 접근 불가(패키지 내에서만 접근가능)
+- 별칭 사용
+- 빈 식별자 사용
+
+
+___
 
 > [pointer.go](https://github.com/FDongFDong/go_language_practice/blob/main/pointer/pointer.go)
 ___
