@@ -16,6 +16,8 @@
     - [숫자형 연산](#숫자형-연산)
     - [문자열 기초](#문자열-기초)
     - [문자열 연산](#문자열-연산)
+  - [자료구조](#자료구조)
+    - [배열](#배열)
   - [조건문](#조건문)
   - [반복문](#반복문)
   - [자료구조 - 문자열 배열](#자료구조---문자열-배열)
@@ -197,7 +199,7 @@ ___
 ### 문자열 기초
 
 > [string1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section5/string1.go)
-> 
+>
 > [string2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section5/string2.go)
 
 - 큰 따옴표로 감싼다 "" 또는 백스쿼트 ``
@@ -209,14 +211,36 @@ ___
 ### 문자열 연산
 
 > [string_oper1.go]()
+>
 > [string_oper2.go]()
+>
 > [string_oper3.go]()
 
 - 문자열 연산
 - 추출, 비교, 조합(결합)
- 
 
 ___
+
+## 자료구조
+
+### 배열
+
+> [array1.go]()
+> [array2.go]()
+> [array3.go]()
+
+- 배열은 용량, 길이가 항상 같다.
+- 배열 vs 슬라이스 차이점 중요
+- 길이 고정 vs 길이 가변
+- 값 타입 vs 참조 타입
+- 복사 전달 vs 참조 값 전달
+- 전체 비교연산자 사용가능 vs 비교 연산자 사용불가
+- 대부분 슬라이스 사용한다.
+- cap() : 배열, 슬라이스 용량 계산
+- len() : 배열, 슬라이스 개수 계산
+
+
+
 
 
 > [function.go](https://github.com/FDongFDong/go_language_practice/blob/main/function/func.go)
