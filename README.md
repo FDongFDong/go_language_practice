@@ -20,9 +20,7 @@
     - [배열](#배열)
     - [슬라이스](#슬라이스)
     - [맵(Map)](#맵map)
-  - [조건문](#조건문)
-  - [반복문](#반복문)
-  - [자료구조 - 문자열 배열](#자료구조---문자열-배열)
+    - [포인터(Pointer)](#포인터pointer)
   - [marshal unMarshal](#marshal-unmarshal)
   - [Ethereum Core Source를 이용한 Explorer 개발](#ethereum-core-source를-이용한-explorer-개발)
 
@@ -146,9 +144,9 @@ ___
 
 ## 초기화 메소드(init)
 > [init1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section4/init1.go)
-> 
+>
 > [init2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section4/init2.go)
-> 
+>
 > [init3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section4/init3.go)
 
 - init : 패키지 로드 시에 가장 먼저 호출된다.
@@ -275,11 +273,11 @@ ___
 ### 맵(Map)
 
 > [map1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/map1.go)
-> 
+>
 > [map2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/map2.go)
-> 
+>
 > [map3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/map3.go)
-> 
+>
 > [map4.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/map4.go)
 
 - 맵 : 해시테이블, 딕셔너리(파이썬)
@@ -291,24 +289,25 @@ ___
 - 순서 없음
 - 맵 조회 및 순회(Iterator)
   - 순서가 없으므로 랜덤
-  
 
-> [function.go](https://github.com/FDongFDong/go_language_practice/blob/main/function/func.go)
-___
+### 포인터(Pointer)
 
-## 조건문
+> [pointer1.go]()
+> 
+> [pointer2.go]()
+> 
+> [pointer3.go]()
 
-> [if.go](https://github.com/FDongFDong/go_language_practice/blob/main/if/if.go)
-___
+- Go : 포인터 지원(C)
+- 변수의 지역성, 연속된 메모리의 참조성 ..., 힙, 스택..
+- 주소의 값은 직접 변경 불가능(잘못된 코딩으로 인한 버그 방지)
+- *(애스터리스크)로 사용
+- nil로 초기화(nil != 0)
+- 포인터로 값 전달 시
+  - 함수, 메서드 호출 시 매개변수 값을 복사해서 전달한다. -> 함수, 메서드 내에서는 원본 값 변경이 불가능하다.
+  - 원본 값 변경 위해서는 포인터로 전달
+  - 특히 크기가 큰 배열인 경우 값 복사시 시스템에 부담이간다 -> 포인터 전달로 해결(슬라이스, 맵은 참조 전달)
 
-## 반복문
-
-> [forloop.go](https://github.com/FDongFDong/go_language_practice/blob/main/forloop/for.go)
-___
-
-## 자료구조 - 문자열 배열
-
-> [structure.go](https://github.com/FDongFDong/go_language_practice/blob/main/structure/data_structure.go)
 ___
 
 ## marshal unMarshal
