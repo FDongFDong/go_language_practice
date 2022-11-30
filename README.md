@@ -85,7 +85,8 @@ ___
   - 상수를 사용하는 일정한 규칙에 따라 숫자를 계산하거나 증가시키는 묶음
 
 ## 제어문 및 반복문
-### if 
+
+### if
 
 > [if1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section3/if1.go)
 >
@@ -98,9 +99,9 @@ ___
 ### switch
 
 > [switch1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section3/switch1.go)
-> 
+>
 > [switch2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section3/switch2.go)
-> 
+>
 > [switch3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section3/switch3.go)
 
 - Switch 키위드 뒤 표현식(Expression) 생략 가능
@@ -129,7 +130,7 @@ ___
 > [package2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section4/package2.go)
 
 - 패키지 : 코드 구조화(모듈화) 및 재사용
-- 응집도, 결합도 
+- 응집도, 결합도
 - Go : 패키지 단위의 독립적이고 작은 단위로 개발 -> 작은 패키지를 결합해서 프로그램을 작성할 것을 권고
 - 패키지 이름 = 디렉토리 이름
 - 같은 패키지 내 -> 소스 파일들은 디렉토리명을 패키지 명으로 사용한다.
@@ -154,6 +155,7 @@ ___
 ___
 
 ## 초기화 메드(init)
+
 > [init1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section4/init1.go)
 >
 > [init2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section4/init2.go)
@@ -237,9 +239,9 @@ ___
 ### 배열
 
 > [array1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/array1.go)
-> 
+>
 > [array2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/array2.go)
-> 
+>
 > [array3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/array3.go)
 
 - 배열은 용량, 길이가 항상 같다.
@@ -255,13 +257,13 @@ ___
 ### 슬라이스
 
 > [slice_basic1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/slice_basic1.go)
-> 
+>
 > [slice_basic2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/slice_basic2.go)
-> 
+>
 > [slice_ex1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/slice_ex1.go)
-> 
+>
 > [slice_ex2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/slice_ex2.go)
-> 
+>
 > [slice_ex3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/slice_ex3.go)
 
 - 길이 가변 -> 동적으로 크기가 늘어난다.
@@ -304,9 +306,9 @@ ___
 ### 포인터(Pointer)
 
 > [pointer1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/pointer1.go)
-> 
+>
 > [pointer2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/pointer2.go)
-> 
+>
 > [pointer3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/pointer3.go)
 
 - Go : 포인터 지원(C)
@@ -326,11 +328,11 @@ ___
 ### 함수 기초
 
 > [func1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/func1.go)
-> 
+>
 > [func2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/func2.go)
-> 
+>
 > [func3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/func3.go)
-> 
+>
 > [func4.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/func4.go)
 
 - 선언 : func 키워드로 선언
@@ -343,11 +345,11 @@ ___
 ### 함수 심화
 
 > [func_ex1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/func_ex1.go)
-> 
+>
 > [func_ex2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/func_ex2.go)
-> 
+>
 > [func_ex3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/func_ex3.go)
-> 
+>
 > [func_ex4.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/func_ex4.go)
 
 - 가변 인자 실습(매개 변수 개수가 동적으로 변할 때 - 정해져 있지 않음)
@@ -357,18 +359,17 @@ ___
 ### Defer
 
 > [f_defer1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/f_defer1.go)
-> 
+>
 > [f_defer2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/f_defer2.go)
-> 
+>
 > [f_defer3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/f_defer3.go)
-> 
+>
 > [f_defer4.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/f_defer4.go)
 
 - Defer 함수 실행(지연)
 - Defer를 호출한 함수가 종료되기 직전에 호출된다.
 - 타 언어의 Finally 문과 비슷
 - 주로 리소스 반환, 열린 파일 닫기, Mutex 잠금 해제
-
 
 ### Closure
 
@@ -384,6 +385,7 @@ ___
 - 클로저를 정확하게 이해하고 사용할 필요가 있음
 
 ___
+
 ## 객체 지향
 
 - Go -> 객체 지향 타입을 구조체로 정의한다. (클래스, 상속 개념 없음)
@@ -397,27 +399,27 @@ ___
 ### 사용자 정의 타입
 
 > [user_struct1.go]()
-> 
+>
 > [user_struct2.go]()
-> 
+>
 > [user_struct3.go]()
-> 
+>
 > [user_struct4.go]()
 
 ### 구조체 기초
 
 > [struct1.go]()
-> 
+>
 > [struct2.go]()
-> 
+>
 > [struct3.go]()
-> 
+>
 > [struct4.go]()
-> 
+>
 > [struct5.go]()
-> 
+>
 > [struct6.go]()
-> 
+>
 > [struct7.go]()
 
 - Go의 필드들의 집합체 또는 컨테이너
@@ -425,7 +427,6 @@ ___
 - 객체지향 방식을 지원 -> 리시버를 통해 메서드랑 연결
 - 상속, 객체, 클래스 개념 없음
 - 구조체 -> 구조체 선언 -> 구조체 인스턴스(리시버)
-
 - 다양한 선언 방법
   - &struct, struct : &struct 포인터를 받아오고 역참조를 또 하기 떄문에 속도가 조금 느리다
   - 인터페이스 메서드를 선언만 해둔 후 -> 오버라이딩 해서 메서드에 포인터 리시버를 사용할 경우에는 반드시 &struct
