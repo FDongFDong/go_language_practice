@@ -25,6 +25,7 @@
     - [함수 기초](#함수-기초)
     - [함수 심화](#함수-심화)
     - [Defer](#defer)
+    - [Closure](#closure)
   - [marshal unMarshal](#marshal-unmarshal)
   - [Ethereum Core Source를 이용한 Explorer 개발](#ethereum-core-source를-이용한-explorer-개발)
 
@@ -350,14 +351,30 @@ ___
 ### Defer
 
 > [f_defer1.go]()
+> 
 > [f_defer2.go]()
+> 
 > [f_defer3.go]()
+> 
 > [f_defer4.go]()
 
 - Defer 함수 실행(지연)
 - Defer를 호출한 함수가 종료되기 직전에 호출된다.
 - 타 언어의 Finally 문과 비슷
 - 주로 리소스 반환, 열린 파일 닫기, Mutex 잠금 해제
+
+
+### Closure
+
+> [closure1.go]()
+> [closure2.go]()
+
+- 익명함수를 사용할 경우 함수를 변수에 할당해서 사용가능
+- 함수 안에서 함수 선언 및 정의가능 -> 이 때 외부 함수에 선언된 변수에 접근 가능한 함수
+- 함수가 선언되는 순간에 함수가 실행 될 때 실체의 외부 변수에 접근학기 위한 스냅샷(객체)
+- 함수를 호출 할 때 이전에 존재했던 값을 유지하기 위해서 -> 비동기, 누적카운트 -> 무분별한 전역변수 남발..
+- 무분별한 전역변수 남발 -> 객체들이 메모리에 존재하므로 -> 메모리부족, 오버플로우 현상 등 자원을 무분별하게 사용 가능성
+- 클로저를 정확하게 이해하고 사용할 필요가 있음
 
 ## marshal unMarshal
 
