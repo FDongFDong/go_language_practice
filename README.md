@@ -212,11 +212,11 @@ ___
 
 ### 문자열 연산
 
-> [string_oper1.go]()
+> [string_oper1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section5/string_oper1.go)
 >
-> [string_oper2.go]()
+> [string_oper2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section5/string_oper2.go)
 >
-> [string_oper3.go]()
+> [string_oper3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section5/string_oper3.go)
 
 - 문자열 연산
 - 추출, 비교, 조합(결합)
@@ -227,11 +227,11 @@ ___
 
 ### 배열
 
-> [array1.go]()
+> [array1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/array1.go)
 > 
-> [array2.go]()
+> [array2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/array2.go)
 > 
-> [array3.go]()
+> [array3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/array3.go)
 
 - 배열은 용량, 길이가 항상 같다.
 - 배열 vs 슬라이스 차이점 중요
@@ -245,15 +245,15 @@ ___
 
 ### 슬라이스
 
-> [slice_basic1.go]()
+> [slice_basic1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/slice_basic1.go)
 > 
-> [slice_basic2.go]()
+> [slice_basic2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/slice_basic2.go)
 > 
-> [slice_ex1.go]()
+> [slice_ex1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/slice_ex1.go)
 > 
-> [slice_ex2.go]()
+> [slice_ex2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/slice_ex2.go)
 > 
-> [slice_ex3.go]()
+> [slice_ex3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/slice_ex3.go)
 
 - 길이 가변 -> 동적으로 크기가 늘어난다.
 - 레퍼런스 타입(참조 값)
@@ -274,13 +274,13 @@ ___
 
 ### 맵(Map)
 
-> [map1.go]()
+> [map1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/map1.go)
 > 
-> [map2.go]()
+> [map2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/map2.go)
 > 
-> [map3.go]()
+> [map3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/map3.go)
 > 
-> [map4.go]()
+> [map4.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/map4.go)
 
 - 맵 : 해시테이블, 딕셔너리(파이썬)
 - key - value로 자료 저장
