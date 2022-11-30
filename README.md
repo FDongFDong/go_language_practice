@@ -319,13 +319,13 @@ ___
 
 ### 함수 기초
 
-> [func1.go]()
+> [func1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/func1.go)
 > 
-> [func2.go]()
+> [func2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/func2.go)
 > 
-> [func3.go]()
+> [func3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/func3.go)
 > 
-> [func4.go]()
+> [func4.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/func4.go)
 
 - 선언 : func 키워드로 선언
   - func 함수명(매개변수) (반환타입 or 반환 값 변수명) : 반환 값 존재
@@ -336,13 +336,13 @@ ___
 
 ### 함수 심화
 
-> [func_ex1.go]()
+> [func_ex1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/func_ex1.go)
 > 
-> [func_ex2.go]()
+> [func_ex2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/func_ex2.go)
 > 
-> [func_ex3.go]()
+> [func_ex3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/func_ex3.go)
 > 
-> [func_ex4.go]()
+> [func_ex4.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/func_ex4.go)
 
 - 가변 인자 실습(매개 변수 개수가 동적으로 변할 때 - 정해져 있지 않음)
 - 함수를 변수에 할당할 수 있다.
@@ -350,13 +350,13 @@ ___
 
 ### Defer
 
-> [f_defer1.go]()
+> [f_defer1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/f_defer1.go)
 > 
-> [f_defer2.go]()
+> [f_defer2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/f_defer2.go)
 > 
-> [f_defer3.go]()
+> [f_defer3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/f_defer3.go)
 > 
-> [f_defer4.go]()
+> [f_defer4.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/f_defer4.go)
 
 - Defer 함수 실행(지연)
 - Defer를 호출한 함수가 종료되기 직전에 호출된다.
@@ -366,8 +366,9 @@ ___
 
 ### Closure
 
-> [closure1.go]()
-> [closure2.go]()
+> [closure1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/closure1.go)
+>
+> [closure2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section7/closure2.go)
 
 - 익명함수를 사용할 경우 함수를 변수에 할당해서 사용가능
 - 함수 안에서 함수 선언 및 정의가능 -> 이 때 외부 함수에 선언된 변수에 접근 가능한 함수
