@@ -142,7 +142,7 @@ ___
 
 ___
 
-## 초기화 메소드(init)
+## 초기화 메드(init)
 > [init1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section4/init1.go)
 >
 > [init2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section4/init2.go)
