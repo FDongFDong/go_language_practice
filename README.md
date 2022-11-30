@@ -292,11 +292,11 @@ ___
 
 ### 포인터(Pointer)
 
-> [pointer1.go]()
+> [pointer1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/pointer1.go)
 > 
-> [pointer2.go]()
+> [pointer2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/pointer2.go)
 > 
-> [pointer3.go]()
+> [pointer3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section6/pointer3.go)
 
 - Go : 포인터 지원(C)
 - 변수의 지역성, 연속된 메모리의 참조성 ..., 힙, 스택..
