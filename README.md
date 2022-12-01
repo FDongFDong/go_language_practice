@@ -113,6 +113,7 @@ ___
 - Type 분기 -> 값이 아닌 변수 Type으로 분기 가능
 
 ### for
+
 > [for1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section3/for1.go)
 >
 > [for2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section3/for2.go)
@@ -122,7 +123,6 @@ ___
 - while, do while문이 없다.
 - Go에서 유일하게 제공되는 반복문
 - 다양한 사용법 숙지 필요
-
 
 ___
 
@@ -145,7 +145,7 @@ ___
 ## 접근제어 및 Alias
 
 > [access1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section4/access1.go)
-> 
+>
 > [access2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section4/access2.go)
 
 - 패키지 접근제어
@@ -167,7 +167,7 @@ ___
 
 - init : 패키지 로드 시에 가장 먼저 호출된다.
 - 가장 먼저 초기화 되는 작업 작성 시 유용하다.
-- init()는 여러개 있어도 컴파일된다. 
+- init()는 여러개 있어도 컴파일된다.
 - 다른 패키지에 있으면 해당 패키지에 있는 init함수가 가장 먼지 실행된다.
 ![image](https://user-images.githubusercontent.com/20445415/204508694-08e23dcc-76d6-41c1-86d0-0cb1147e8b07.png)
 
@@ -178,7 +178,7 @@ ___
 ### Bool
 
 > [bool1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section5/bool1.go)
-> 
+>
 > [bool2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section5/bool2.go)
 
 - Bool(Boolean) : 참과 거짓
@@ -424,7 +424,7 @@ ___
 > [struct6.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/struct6.go)
 
 - Go의 필드들의 집합체 또는 컨테이너
-- 필드는 갖지만 메서드는 갖지 않는다. 
+- 필드는 갖지만 메서드는 갖지 않는다.
 - 객체지향 방식을 지원 -> 리시버를 통해 메서드랑 연결
 - 상속, 객체, 클래스 개념 없음
 - 구조체 -> 구조체 선언 -> 구조체 인스턴스(리시버)
