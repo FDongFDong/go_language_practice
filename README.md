@@ -496,13 +496,13 @@ ___
 
 ### 고루틴(Goroutine)
 
-> [goroutine1.go]()
+> [goroutine1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/goroutine1.go)
 >
-> [goroutine2.go]()
+> [goroutine2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/goroutine2.go)
 >
-> [goroutine3.go]()
+> [goroutine3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/goroutine3.go)
 >
-> [goroutine4.go]()
+> [goroutine4.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/goroutine4.go)
 
 - 타 언어의 쓰레드(Thread)와 비슷한 기능
 - 생성 방법 매우 간단하며 리소스를 매우 적게 사용한다.
@@ -525,17 +525,17 @@ ___
 
 ### 채널(Channel)
 
-> [gochannel1.go]()
+> [gochannel1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/gochannel1.go)
 >
-> [gochannel2.go]()
+> [gochannel2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/gochannel2.go)
 >
-> [gochannel3.go]()
+> [gochannel3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/gochannel3.go)
 >
-> [gochannel4.go]()
+> [gochannel4.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/gochannel4.go)
 >
-> [gochannel5.go]()
+> [gochannel5.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/gochannel5.go)
 >
-> [gochannel6.go]()
+> [gochannel6.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/gochannel6.go)
 
 - 고루틴간의 상호 정보(데이터) 교환 및 실행 흐름 동기화 위해 사용 : 채널(동기식, 레퍼런스 타입)
 - 실행 흐름 제어 가능(동기, 비동기) -> 일반 변수로 선언 후 사용 가능
