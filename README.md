@@ -34,6 +34,7 @@
     - [인터페이스 심화](#인터페이스-심화)
   - [Go 병행 처리](#go-병행-처리)
     - [고루틴(Goroutine)](#고루틴goroutine)
+    - [채널(Channel)](#채널channel)
   - [marshal unMarshal](#marshal-unmarshal)
   - [Ethereum Core Source를 이용한 Explorer 개발](#ethereum-core-source를-이용한-explorer-개발)
 
@@ -432,6 +433,7 @@ ___
   - 인터페이스 메서드를 선언만 해둔 후 -> 오버라이딩 해서 메서드에 포인터 리시버를 사용할 경우에는 반드시 &struct
 
 ### 구조체 심화
+
 > [struct_ex1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/struct_ex1.go)
 >
 > [struct_ex2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/struct_ex2.go)
@@ -457,7 +459,7 @@ ___
 >
 > [interface4.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/interface4.go)
 >
-> [interface5.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/interface5.go) 
+> [interface5.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/interface5.go)
 
 - 객체의 동작을 표현, 골격
 - 단순히 동작에 대한 방법만 표시
@@ -495,8 +497,11 @@ ___
 ### 고루틴(Goroutine)
 
 > [goroutine1.go]()
+>
 > [goroutine2.go]()
+>
 > [goroutine3.go]()
+>
 > [goroutine4.go]()
 
 - 타 언어의 쓰레드(Thread)와 비슷한 기능
@@ -518,6 +523,27 @@ ___
     - 동기화 코딩 반드시 숙지하여 사용해야한다
     - 데드락
 
+### 채널(Channel)
+
+> [gochannel1.go]()
+>
+> [gochannel2.go]()
+>
+> [gochannel3.go]()
+>
+> [gochannel4.go]()
+>
+> [gochannel5.go]()
+>
+> [gochannel6.go]()
+
+- 고루틴간의 상호 정보(데이터) 교환 및 실행 흐름 동기화 위해 사용 : 채널(동기식, 레퍼런스 타입)
+- 실행 흐름 제어 가능(동기, 비동기) -> 일반 변수로 선언 후 사용 가능
+- 데이터 전달 자료형 선언 후 사용(지정된 타입만 주고 받을 수 있음)
+- interface{} 전달을 통해 자료형 상관없이 전송 및 수신 가능
+- 값을 전달(복사 후 : bool, int 등), 포인터(슬라이스, 맵)등을 전달시에는 주의 > 동기화 사용(Mutex)
+- 멀티 프로세싱 처리에서 교착상태(경쟁) 주의
+- <- , -> ( 채널 <- 데이터 ) : 송신, ( <- 채널 ) : 수신
 
 ## marshal unMarshal
 
