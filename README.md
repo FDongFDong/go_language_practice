@@ -398,29 +398,27 @@ ___
 
 ### 사용자 정의 타입
 
-> [user_struct1.go]()
+> [user_struct1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/user_struct1.go)
 >
-> [user_struct2.go]()
+> [user_struct2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/user_struct2.go)
 >
-> [user_struct3.go]()
+> [user_struct3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/user_struct3.go)
 >
-> [user_struct4.go]()
+> [user_struct4.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/user_struct4.go)
 
 ### 구조체 기초
 
-> [struct1.go]()
+> [struct1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/struct1.go)
 >
-> [struct2.go]()
+> [struct2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/struct2.go)
 >
-> [struct3.go]()
+> [struct3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/struct3.go)
 >
-> [struct4.go]()
+> [struct4.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/struct4.go)
 >
-> [struct5.go]()
+> [struct5.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/struct5.go)
 >
-> [struct6.go]()
->
-> [struct7.go]()
+> [struct6.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/struct6.go)
 
 - Go의 필드들의 집합체 또는 컨테이너
 - 필드는 갖지만 메서드는 갖지 않는다. 
@@ -432,15 +430,15 @@ ___
   - 인터페이스 메서드를 선언만 해둔 후 -> 오버라이딩 해서 메서드에 포인터 리시버를 사용할 경우에는 반드시 &struct
 
 ### 구조체 심화
-> [struct_ex1.go]()
+> [struct_ex1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/struct_ex1.go)
 >
-> [struct_ex2.go]()
+> [struct_ex2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/struct_ex2.go)
 >
-> [struct_ex3.go]()
+> [struct_ex3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/struct_ex3.go)
 >
-> [struct_ex4.go]()
+> [struct_ex4.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/struct_ex4.go)
 >
-> [struct_ex5.go]()
+> [struct_ex5.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/struct_ex5.go)
 
 - 구조체 임베디드 패턴
 - 다른 관점으로 메서드를 재 사용하는 장점 제공
@@ -449,12 +447,15 @@ ___
 
 ### 인터페이스 기초
 
-> [interface1.go]()
-> [interface2.go]()
-> [interface3.go]()
-> [interface4.go]()
-> [interface5.go]()
-> 
+> [interface1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/interface1.go)
+>
+> [interface2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/interface2.go)
+>
+> [interface3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/interface3.go)
+>
+> [interface4.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/interface4.go)
+>
+> [interface5.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/interface5.go) 
 
 - 객체의 동작을 표현, 골격
 - 단순히 동작에 대한 방법만 표시
@@ -468,11 +469,11 @@ ___
 
 ### 인터페이스 심화
 
-> [interface_ex1.go]()
+> [interface_ex1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/interface_ex1.go)
 >
-> [interface_ex2.go]()
+> [interface_ex2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/interface_ex2.go)
 >
-> [interface_ex3.go]()
+> [interface_ex3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section8/interface_ex3.go)
 
 - 인터페이스 활용(빈 인터페이스)
   - 빈 인터페이스 : 함수 매개변수, 리턴 값, 구조체 필드등으로 사용 가능 -> 어떤 타입으로도 변환 가능
@@ -484,6 +485,8 @@ ___
   - interfaceVal.(type)
 - 실제 타입 검사 switch 사용
   - 빈 인터페이스는 어떠한 자료형도 전달 받을 수 있으므로, 타입 체크를 통해 형 변환 후 사용 가능
+
+___
 
 ## marshal unMarshal
 
