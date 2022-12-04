@@ -602,6 +602,7 @@ ___
 - select 문 : 여러 채널에서 동시에 데이터를 기다릴 때 사용한다.
   - 하나의 case만 실행되면 select문을 빠져나간다.
     - 바깥에 무한 루프를 걸어서 많이 사용한다.
+  
     ```go
       select {
         // ch1 채널에서 데이터를 빼낼 수 있을 때 실행
@@ -613,12 +614,32 @@ ___
         case ...
       }
     ```
+
 - 일정 간격으로 실행
   - time 패키지의 Tick()은 일정 간격으로 신호를 주는 채널을 반환
   - After()는 일정 시간 대기 후 한번만 신호를 주는 채널 반환
   - [ex25.6]()
 - 채널로 생산자(Producer)/소비자(Consumer) 패턴 구현
   - [ex25.7]()
+- 컨텍스트(Context) : 작업을 지시할 때 작업 가능 시간, 작업 취소 등의 조건을 지시할 수 있는 작업 명세서 역할
+  - [ex25.8]()
+  - 작업 시간 설정
+    - 3초 뒤에 ctx.Done() 채널에 시그널 발생
+  
+      ```go
+        ctx, cancel := context.WithTimeout(context.Background(), 3*time.Second)
+      ```
+  - 특정 값 설정
+    - [ex25.9]()
+  - 컨텍스트 랩핑(기능들을 추가해나갈 수 있다.)
+  
+    ```go
+      ctx, cancel := context.WithCancel(Context.Background())
+      ctx = context.WithValue(ctx, "number", 9)
+      ctx = context.WithValue(ctx, "keyword", "FDong")
+    ```
+- 채널로 발행(Publisher)/구독(Subscriber) 패턴 구현
+  - 옵저버 패턴과 거의 유사
 - 실행 흐름 제어 가능(동기, 비동기), 일반 변수로 선언 후 사용 가능
 - 데이터 전달 자료형 선언 후 사용(지정된 타입만 주고 받을 수 있음)
 - interface{} 전달을 통해 자료형 상관없이 전송 및 수신 가능
