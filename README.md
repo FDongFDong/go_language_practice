@@ -531,22 +531,22 @@ ___
   - 동시성 프로그래밍의 주의점
     - 동일한 메모리 자원을 여러 고루틴에서 접근할 때 동시성 문제가 발생한다.
       - 메모리 공유로 인한 문제
-      - [ex24.3]()
+      - [ex24.3](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/ex24.3/24.3.go)
     - 뮤텍스를 이용해서 문제 해결
-    - [ex24.4]()
+    - [ex24.4](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/ex24.4/ex24.4.go)
       - 뮤텍스의 문제점
         - 동시성 프로그래밍으로 인한 성능 향상을 얻을 수 없다. 과도한 락킹으로 성능이 하락되기도 한다.
           - 락을 획득하고 반납하는데도 성능을 먹는다.
         - 데드락 문제 발생
-        - [ex24.5]()
+        - [ex24.5](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/ex24.5/ex24.5.go)
     - 뮤텍스는 작은 범위에서 확실할 때 사용해야한다.
     - 또 다른 자원 관리 기법(서로 간섭하지 않게 만든다.)
       - 영역을 나누는 방법
-        - [ex24.6]()
+        - [ex24.6](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/ex24.6/ex24.6.go)
       - 역할을 나누는 방법
 - Example
   - 서브 고루틴이 종료될 때까지 대기
-  - [ex24.2]()
+  - [ex24.2](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/ex24.2/ex24.2.go)
 
 ### 채널 기초(Channel)
 
