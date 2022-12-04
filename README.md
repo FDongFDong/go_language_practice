@@ -34,7 +34,8 @@
     - [인터페이스 심화](#인터페이스-심화)
   - [Go 병행 처리](#go-병행-처리)
     - [고루틴(Goroutine)](#고루틴goroutine)
-    - [채널(Channel)](#채널channel)
+    - [채널 기초(Channel)](#채널-기초channel)
+    - [채널 심화(Channel)](#채널-심화channel)
   - [marshal unMarshal](#marshal-unmarshal)
   - [Ethereum Core Source를 이용한 Explorer 개발](#ethereum-core-source를-이용한-explorer-개발)
 
@@ -523,7 +524,7 @@ ___
     - 동기화 코딩 반드시 숙지하여 사용해야한다
     - 데드락
 
-### 채널(Channel)
+### 채널 기초(Channel)
 
 > [gochannel1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/gochannel1.go)
 >
@@ -544,6 +545,16 @@ ___
 - 값을 전달(복사 후 : bool, int 등), 포인터(슬라이스, 맵)등을 전달시에는 주의 > 동기화 사용(Mutex)
 - 멀티 프로세싱 처리에서 교착상태(경쟁) 주의
 - <- , -> ( 채널 <- 데이터 ) : 송신, ( <- 채널 ) : 수신
+
+### 채널 심화(Channel)
+
+- 함수 등의 매개변수에 수신 및 발신 전용 채널 지정 가능
+- 전용 채널 설정 후 방향이 다를 경우 예외 발생
+- 발신 전용 channel <- 데이터형
+- 수신 전용 <- channel
+- 매개 변수를 통해서 전용 채널 확인할 수 있다.
+- 채널 또한 함수의 반환 값으로 사용 가능
+
 
 ## marshal unMarshal
 
