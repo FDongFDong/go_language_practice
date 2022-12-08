@@ -703,10 +703,18 @@ ___
       Error() string
     }
   ```
+- 에러 랩핑(Wrapping)
+- fmt.Errorf()의 %w의 포맷터로 에러 랩핑 가능
+- errors.ls() 함수와 As() 함수로 랩핑된 에러 체크 및 변환
+  - Is는 감싸진 곳에 에러가 들어있는지 여부 반환
+  - As는 감싸진 에러로 변환
+  - [ex23.4.go]
 
 ### panic, recover
 
 - 사용자가 에러 발생 가능
+- 처리하기 힘든 에러를 만났을 때 프로그램을 조기 종료하는 방법
+- 빠르게 종료시켜 오류를 해결하기 위해서 사용
 - Panic 함수는 호출 즉시, 해당 메서드를 즉시 중지시키고 defer 함수를 호출하고 자기자신을 호출한 곳으로 리턴
 - Runtime 이외에 사용자가 코드 흐름에 따라 에러를 발생 시킬 때 중요!!
 - 문법적인 에러는 아니지만, 논리적인 코드 흐름에 따른 에러 발생 처리 가능
@@ -714,6 +722,8 @@ ___
   - [pn_re2.go]()
   - [pn_re3.go]()
   - [pn_re4.go]()
+
+  - 
 ## marshal unMarshal
 
 > [json](https://github.com/FDongFDong/go_language_practice/blob/main/json/json.go)
