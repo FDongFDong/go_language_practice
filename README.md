@@ -602,7 +602,7 @@ ___
       make(chan int, 10)
     ```
   - 채널에 데이터를 넣고 가져가지 않으면 무한 대기 상태에 빠진다.
-    - [ex25.2]()
+    - [ex25.2](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/ex25.2/ex25.2.go)
 - 채널에서 데이터 대기
   - 채널에 range 키워드를 사용하면 데이터가 올때까지 대기한다.
     ```go
@@ -612,8 +612,8 @@ ___
     ```
 - close()로 채널을 닫아준다
   - 좀비 고루틴 : 채널을 닫아주지 않아서 무한 대기를 하는 고루틴을 좀비 고루틴 또는 고루틴 릭(Lead)이라고 한다.
-  - [ex25.3]()
-  - [ex25.3_1]()
+  - [ex25.3](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/ex25.3/ex25.3.go)
+  - [ex25.3_1](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/ex25.3_1/ex25.3_1.go)
 - select 문 : 여러 채널에서 동시에 데이터를 기다릴 때 사용한다.
   - 하나의 case만 실행되면 select문을 빠져나간다.
     - 바깥에 무한 루프를 걸어서 많이 사용한다.
@@ -676,13 +676,13 @@ ___
 
 ## 에러 처리
 
-> [error1.go]()
+> [error1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section10/error1.go)
 >
-> [error2.go]()
+> [error2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section10/error2.go)
 >
-> [error3.go]()
+> [error3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section10/error3.go)
 >
-> [error4.go]()
+> [error4.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section10/error4.go)
 
 - 에러 처리 : 소프트웨어의 품질을 향상 시키는데 가장 중요한 것
   - 문제 발생, 유지 보수 시 유형 코드 및 에러 정보 등을 남기는 것
@@ -718,12 +718,10 @@ ___
 - Panic 함수는 호출 즉시, 해당 메서드를 즉시 중지시키고 defer 함수를 호출하고 자기자신을 호출한 곳으로 리턴
 - Runtime 이외에 사용자가 코드 흐름에 따라 에러를 발생 시킬 때 중요!!
 - 문법적인 에러는 아니지만, 논리적인 코드 흐름에 따른 에러 발생 처리 가능
-  - [pn_re1.go]()
-  - [pn_re2.go]()
-  - [pn_re3.go]()
-  - [pn_re4.go]()
-
-  - 
+  - [pn_re1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section10/pn_re1.go)
+  - [pn_re2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section10/pn_re2.go)
+  - [pn_re3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section10/pn_re3.go)
+  - [pn_re4.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section10/pn_re4.go)
 ## marshal unMarshal
 
 > [json](https://github.com/FDongFDong/go_language_practice/blob/main/json/json.go)
