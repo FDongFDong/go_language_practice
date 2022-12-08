@@ -36,6 +36,8 @@
     - [고루틴(Goroutine)](#고루틴goroutine)
     - [채널 기초(Channel)](#채널-기초channel)
     - [채널 심화(Channel)](#채널-심화channel)
+  - [에러 처리](#에러-처리)
+    - [panic, recover](#panic-recover)
   - [marshal unMarshal](#marshal-unmarshal)
   - [Ethereum Core Source를 이용한 Explorer 개발](#ethereum-core-source를-이용한-explorer-개발)
 
@@ -670,7 +672,48 @@ ___
 - 매개 변수를 통해서 전용 채널 확인할 수 있다.
 - 채널 또한 함수의 반환 값으로 사용 가능
 
+___
 
+## 에러 처리
+
+> [error1.go]()
+>
+> [error2.go]()
+>
+> [error3.go]()
+>
+> [error4.go]()
+
+- 에러 처리 : 소프트웨어의 품질을 향상 시키는데 가장 중요한 것
+  - 문제 발생, 유지 보수 시 유형 코드 및 에러 정보 등을 남기는 것
+- 기본적으로 error 패키지에서 error 인터페이스를 제공한다.
+- 에러 핸들링
+  - 프로그램을 죽이는 방법
+  - 프로그램을 지속시키는 방법
+- Errorf() : 에러 타입 리턴 메서드
+- Fatal() : 프로그램 종료
+- 기본적으로 메서드 마다 리턴 타입 2개(리턴값, 에러)로 만든다.
+- 에러 타입
+  - 에러도 인터페이스이다.
+    - Error() 메서드가 있고
+    - string만 반환하면 무슨타입이든 에러로 사용할 수 있다.
+  - Error 메서드를 구현하면 사용자 정의 에러 처리 제작이 가능하다.
+  ```go
+    type error interface {
+      Error() string
+    }
+  ```
+
+### panic, recover
+
+- 사용자가 에러 발생 가능
+- Panic 함수는 호출 즉시, 해당 메서드를 즉시 중지시키고 defer 함수를 호출하고 자기자신을 호출한 곳으로 리턴
+- Runtime 이외에 사용자가 코드 흐름에 따라 에러를 발생 시킬 때 중요!!
+- 문법적인 에러는 아니지만, 논리적인 코드 흐름에 따른 에러 발생 처리 가능
+  - [pn_re1.go]()
+  - [pn_re2.go]()
+  - [pn_re3.go]()
+  - [pn_re4.go]()
 ## marshal unMarshal
 
 > [json](https://github.com/FDongFDong/go_language_practice/blob/main/json/json.go)
