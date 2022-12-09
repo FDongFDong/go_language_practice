@@ -20,5 +20,5 @@ func main() {
 	// 예제
 	runFunc()
 	// <- 이곳으로 온다.
-	fmt.Println("Hello Golang")
+	fmt.Println("Hello")
 }

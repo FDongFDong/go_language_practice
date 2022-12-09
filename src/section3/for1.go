@@ -29,6 +29,6 @@ func main() {
 	// 예제 3(Range용법)
 	loc := []string{"Seoul", "Busan", "Incheon"}
 	for index, name := range loc {
-		fmt.Println("ex3 : ", index, name)
+		fmt.Println(index, name)
 	}
 }

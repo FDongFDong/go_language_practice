@@ -38,6 +38,7 @@
     - [채널 심화(Channel)](#채널-심화channel)
   - [에러 처리](#에러-처리)
     - [panic, recover](#panic-recover)
+  - [파일 입출력](#파일-입출력)
   - [marshal unMarshal](#marshal-unmarshal)
   - [Ethereum Core Source를 이용한 Explorer 개발](#ethereum-core-source를-이용한-explorer-개발)
 
@@ -683,6 +684,13 @@ ___
 > [error3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section10/error3.go)
 >
 > [error4.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section10/error4.go)
+>
+> [error_ex1.go]()
+>
+> [error_ex2.go]()
+>
+> [error_ex3.go]()
+
 
 - 에러 처리 : 소프트웨어의 품질을 향상 시키는데 가장 중요한 것
   - 문제 발생, 유지 보수 시 유형 코드 및 에러 정보 등을 남기는 것
@@ -722,6 +730,26 @@ ___
   - [pn_re2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section10/pn_re2.go)
   - [pn_re3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section10/pn_re3.go)
   - [pn_re4.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section10/pn_re4.go)
+
+___
+
+## 파일 입출력
+
+> [file_write1.go]()
+>
+> [file_write2.go]()
+>
+
+- 파일 쓰기
+  - Create : 새 파일 작성 및 파일 열기
+  - Close : 리소스 닫기
+  - Write, WriteString, WriteAt : 파일 쓰기
+  - 각 운영체제 권한 주의(오류 메시지 확인)
+  - 파일 입출력은 예외 처리가 중요
+  - 패키지 저장소를 통해서 Excel 등 다양한 파일 형식 쓰기, 읽기 가능
+  - 패키지 Github 주소 : <https://github.com/tealeg/xLsx>
+  - bufio : 파일이 용량이 클 경우 버퍼 사용 권장
+
 ## marshal unMarshal
 
 > [json](https://github.com/FDongFDong/go_language_practice/blob/main/json/json.go)
