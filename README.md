@@ -39,6 +39,7 @@
   - [에러 처리](#에러-처리)
     - [panic, recover](#panic-recover)
   - [파일 입출력](#파일-입출력)
+    - [ioutil 활용](#ioutil-활용)
   - [marshal unMarshal](#marshal-unmarshal)
   - [Ethereum Core Source를 이용한 Explorer 개발](#ethereum-core-source를-이용한-explorer-개발)
 
@@ -739,6 +740,9 @@ ___
 >
 > [file_write2.go]()
 >
+> [file_read1.go]()
+>
+> [file_read2.go]()
 
 - 파일 쓰기
   - Create : 새 파일 작성 및 파일 열기
@@ -749,6 +753,56 @@ ___
   - 패키지 저장소를 통해서 Excel 등 다양한 파일 형식 쓰기, 읽기 가능
   - 패키지 Github 주소 : <https://github.com/tealeg/xLsx>
   - bufio : 파일이 용량이 클 경우 버퍼 사용 권장
+- 파일 읽기
+  - Open :  기존 파일 열기
+  - Close : 리소스 닫기
+  - Read, ReadAt : 파일 읽기
+  - 각 운영체제 권한 주의(오류 메시지 확인)
+  - 예외 처리 정말 중요
+  - 탐색 Seek 중요
+- 버퍼 사용
+  - 파일 읽기, 버퍼 사용 쓰기 -> bufio 패키지 활용
+  - ioutil, bufio 등은 io.Reader, io.Writer 인터페이스를 구현해뒀다.
+  - 즉, Writer, Read 메서드를 사용 가능하다는 의미
+  
+  ```go
+    type Reader interface {
+      Read(p []byte)(n int, err error)
+    }
+    type Writer interface {
+      Write(p []byte)(n int, err error)
+    }
+  ```
+
+  - 즉, bufio의 NewReader, NewWriter를 통해서 객체 반환 후 메서드 사용 가능
+  - bufio(Buffered io)패키지
+    - https://golang.org/pkg/bufio
+  - 파일 열기
+    - 두 번째 매개변수 확인
+    - https://golang.org/pkg/os/#pkg-constants
+  - 상태(버퍼가 4바이트일 때 동작)
+    - a ----> a
+    - b ----> ab
+    - c ----> abc
+    - d ----> abcd
+    - e ----> e ----> abcd
+    - f ----> ef ----> abcd
+    - g ----> efg ----> abcd
+    - h ----> efgh ----> abcd
+    - i ----> i ----> abcdefgh
+
+### ioutil 활용
+
+- 파일 읽기, 쓰기 -> ioutil 패키지 활용
+- 장점 : 더욱 편리하고 지관적으로 파일을 읽고 쓰기 가능
+- 아래 메소드 확인 가능
+  - WriteFile(), ReadFile(), ReadAll() 등 사용가능
+  - https://golang.org/pkg/io/ioutil/
+- 파일모드(chmod, chown, chgrp) -> 퍼미션
+  - 개발중인 에디터의 권한이 관리자 권한이어야 한다.
+  - 읽기 : 4, 쓰기 : 2, 실행 : 1
+  - 소유자, 그룹, 기타 사용자 순서 (644)
+  - https://golang.org/pkg/os/#FileMode
 
 ## marshal unMarshal
 
