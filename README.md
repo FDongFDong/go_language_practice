@@ -637,11 +637,11 @@ ___
 - 일정 간격으로 실행
   - time 패키지의 Tick()은 일정 간격으로 신호를 주는 채널을 반환
   - After()는 일정 시간 대기 후 한번만 신호를 주는 채널 반환
-  - [ex25.6]()
+  - [ex25.6](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/ex25.6/ex25.6.go)
 - 채널로 생산자(Producer)/소비자(Consumer) 패턴 구현
-  - [ex25.7]()
+  - [ex25.7](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/ex25.7/ex25.7.go)
 - 컨텍스트(Context) : 작업을 지시할 때 작업 가능 시간, 작업 취소 등의 조건을 지시할 수 있는 작업 명세서 역할
-  - [ex25.8]()
+  - [ex25.8](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/ex25.8/ex25.8.go)
   - 작업 시간 설정
     - 3초 뒤에 ctx.Done() 채널에 시그널 발생
   
@@ -649,7 +649,7 @@ ___
         ctx, cancel := context.WithTimeout(context.Background(), 3*time.Second)
       ```
   - 특정 값 설정
-    - [ex25.9]()
+    - [ex25.9](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/ex25.9/ex25.9.go)
   - 컨텍스트 랩핑(기능들을 추가해나갈 수 있다.)
   
     ```go
@@ -680,10 +680,10 @@ ___
 - 실행 흐름 제어 및 변수 동기화 가능
 - 공유 데이터 보호가 가장 중요하다.
 - 동기화 사용하지 않은 경우
-  - [go_sync1.go]() 
+  - [go_sync1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/go_sync1.go) 
   - 시스템 전체 cpu 사용
 - 동기화를 사용한 경우
-  - [go_sync2.go]()
+  - [go_sync2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/go_sync2.go)
   - mutex 사용 : 여러 고루틴에서 작업하는 공유데이터 보호
   - sync.Mutex 선언 후 Lock, Unlock
 - 뮤텍스 : 상호 배제 -> Thread(고투린)들이 서로 다른 Running time에 서로 영향을 주지 않게 즉, 단독으로 실행되게 하는 기술
@@ -694,26 +694,26 @@ ___
   - RWMutex : 쓰기 Lock -> 쓰기 시도 중에는 다른 곳에서 이전 값을 읽으면 안된다. 읽기, 쓰기 Lock 전부 방지
   - RMutex : 읽기 Lock -> 읽기 시도 중 값 변경 방지 즉, 쓰기 Lock 방어
     - 동기화를 사용하지 않은 경우
-    - [go_sync3.go]() 
+    - [go_sync3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/go_sync3.go) 
     - 동기화 사용
-    - [go_sync4.go]()
+    - [go_sync4.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/go_sync4.go)
 - 고루틴 동기화 객체
   - 동기화 상태(조건) 메서드 사용
   - Wait, notify, notifyAll : 기타언어
   - Wait, Signal, Broadcast : Go
     - Wait을 실행시키면 Signal(한개씩), Broadcas(모두 다)가 올때까지 기다린다.
-  - [go_sync5.go]()
+  - [go_sync5.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/go_sync5.go)
 
 ### 동기화 고급
 
 - Once : 한 번만 실행(주로 초기화에 사용)
   - Do로 실행
-  - [go_sync_ex1.go]()
+  - [go_sync_ex1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/go_sync_ex1.go)
 - 대기 그룹
 - 실행 흐름 변경(고루틴이 종료 될 때 까지 대기 기능)
   - WaitGroup : Add(고루틴 추가), Done(작업 종료 알림), Wait(고루틴 종료시 까지 대기)
   - Add로 추가 된 고루틴 개수와 Done으로 종료되는 알림 횟수가 같아야 정확하게 동작한다. (Add == Done)
-  - [go_sync_ex2.go]()
+  - [go_sync_ex2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/go_sync_ex2.go)
 - 원자성 사용 -> 기능적으로 분할 불가능한 완전 보증된 일련의 조작 (10개의 실행 중 1개라도 안되면 안된거다. 모두 성공하거나 모두 실패)
   - 모든 조작이 완료 될 때까지 다른 프로세스 개입 불가
   - sync/atomic에서 원자적 연산자 제공
@@ -721,9 +721,9 @@ ___
   - 주로 공용 변수에 관한 계산시 사용한다.(공용데이터 보호)
   - mutex로 Lock, UnLock해도 되지만 원자성을 위한 패키지가 있다.
   - 원자성 사용 안할 경우에 대한 예제
-    - [go_sync_ex3.go]()
+    - [go_sync_ex3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/go_sync_ex3.go)
   - 원자성 사용한 예제
-    - [go_sync_ex4.go]()
+    - [go_sync_ex4.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section9/go_sync_ex4.go)
 ___
 
 ## 에러 처리
@@ -736,11 +736,11 @@ ___
 >
 > [error4.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section10/error4.go)
 >
-> [error_ex1.go]()
+> [error_ex1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section10/error_ex1.go)
 >
-> [error_ex2.go]()
+> [error_ex2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section10/error_ex2.go)
 >
-> [error_ex3.go]()
+> [error_ex3.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section10/error_ex3.go)
 
 
 - 에러 처리 : 소프트웨어의 품질을 향상 시키는데 가장 중요한 것
@@ -767,7 +767,7 @@ ___
 - errors.ls() 함수와 As() 함수로 랩핑된 에러 체크 및 변환
   - Is는 감싸진 곳에 에러가 들어있는지 여부 반환
   - As는 감싸진 에러로 변환
-  - [ex23.4.go]
+  - [ex23.4.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section10/ex23.4/ex23.4.go)
 
 ### panic, recover
 
@@ -786,13 +786,13 @@ ___
 
 ## 파일 입출력
 
-> [file_write1.go]()
+> [file_write1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section11/file_write1.go)
 >
-> [file_write2.go]()
+> [file_write2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section11/file_write2.go)
 >
-> [file_read1.go]()
+> [file_read1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section11/file_read1.go)
 >
-> [file_read2.go]()
+> [file_read2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section11/file_read2.go)
 
 - 파일 쓰기
   - Create : 새 파일 작성 및 파일 열기
@@ -842,6 +842,10 @@ ___
     - i ----> i ----> abcdefgh
 
 ### ioutil 활용
+
+> [file_io_ex1.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section11/file_io_ex1.go)
+>
+> [file_io_ex2.go](https://github.com/FDongFDong/go_language_practice/blob/main/src/section11/file_io_ex2.go)
 
 - 파일 읽기, 쓰기 -> ioutil 패키지 활용
 - 장점 : 더욱 편리하고 지관적으로 파일을 읽고 쓰기 가능
