@@ -42,6 +42,7 @@
     - [panic, recover](#panic-recover)
   - [파일 입출력](#파일-입출력)
     - [ioutil 활용](#ioutil-활용)
+  - [Package](#package)
   - [marshal unMarshal](#marshal-unmarshal)
   - [Ethereum Core Source를 이용한 Explorer 개발](#ethereum-core-source를-이용한-explorer-개발)
 
@@ -857,6 +858,31 @@ ___
   - 읽기 : 4, 쓰기 : 2, 실행 : 1
   - 소유자, 그룹, 기타 사용자 순서 (644)
   - https://golang.org/pkg/os/#FileMode
+
+___
+
+## Package
+
+> [pkg_make.go]()
+>
+> [pkg_get.go]()
+
+- 사용자 패키지 작성 & Go 문서화
+  - 기준은 GOPATH/src
+  - 패키지 폴더명(디렉터리명) 명확하게 지정
+  - 패키지 파일의 package 이름 으로 사용한다. -> 길면 alias 사용
+  - package main 을 제외하고 package 문서에 등록
+  - 기본적으로 GOROOT의 패키지(pkg) 검색 -> 없으면 GOPATH의 패키지(src/pkg) 검색
+  - go install 명령어 실행의 경우 -> GOPATH/pkg에 등록(문서화)
+  - godoc -http=:6060(임의의 포트) -> pkg 이동 후 본인 패키지 메서드 및 주석 확인(패키지, 타입, 메서드) 주석
+- 외부 저장소 패키지 설치
+  - 2가지 방법
+  - 1. import 선언 후 폴더 이동 후 go install 설치 -> 사용
+  - 2. go install 패키지 주소 설치 -> 선언
+    - ex. go install "패키지 명"
+  - 선언 후 go install 설치 예제(엑셀 파일 읽기)
+
+___
 
 ## marshal unMarshal
 

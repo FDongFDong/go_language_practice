@@ -1,9 +1,8 @@
-package main 
+package main
 
 import (
-
-	"time"
 	"fmt"
+	"time"
 )
 
 func main() {
@@ -16,31 +15,31 @@ func main() {
 	ch1 := make(chan int)
 	ch2 := make(chan string)
 
-	go func () {
+	go func() {
 		for {
 			ch1 <- 77
 			time.Sleep(250 * time.Millisecond)
 		}
 	}()
-		go func () {
+	go func() {
 		for {
 			ch2 <- "Golang H!i"
 			time.Sleep(500 * time.Millisecond)
 		}
 	}()
 
-	go func(){
+	go func() {
 		for {
 			select {
 			case num := <-ch1:
-				fmt.Println("ch1: ",num)
+				fmt.Println("ch1: ", num)
 			case str := <-ch2:
-				fmt.Println("ch2: ",str)
-			// default:
-			// 	fmt.Println("default test")
+				fmt.Println("ch2: ", str)
+				// default:
+				// 	fmt.Printl/Applications/Visual Studio Code.app/Contents/Resources/app/out/vs/code/electron-sandbox/workbench/workbench.htmln("default test")
 			}
-			
+
 		}
 	}()
-	time.Sleep(7 *time.Second)
+	time.Sleep(7 * time.Second)
 }
