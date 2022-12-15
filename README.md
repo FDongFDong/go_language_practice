@@ -910,6 +910,9 @@ ___
 
 ### Todo App
 > [Todo App](https://lateral-lifeboat-0a9.notion.site/Todo-App-8004e69d93de43acb34ef6ad065d735a)
+>
+> [Source Code](https://github.com/FDongFDong/go_language_practice/tree/main/src/toyproject/todoApp)
 
 ### Gin을 활용한 CRUD
 > [CRUD App](https://lateral-lifeboat-0a9.notion.site/Gin-CRUD-854744c6ac8b4ff9badf0ad23063e03f)
+> [Source Code](https://github.com/FDongFDong/go_language_practice/tree/main/src/toyproject/CRUD_gin)
