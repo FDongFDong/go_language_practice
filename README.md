@@ -45,6 +45,9 @@
   - [Package](#package)
   - [marshal unMarshal](#marshal-unmarshal)
   - [Ethereum Core Source를 이용한 Explorer 개발](#ethereum-core-source를-이용한-explorer-개발)
+  - [Toy Project](#toy-project)
+    - [Todo App](#todo-app)
+    - [Gin을 활용한 CRUD](#gin을-활용한-crud)
 
 ## Go 언어 장점 및 특징
 
@@ -902,3 +905,11 @@ ___
 - ERC20 토큰 정보 가져오기
 
 <img width="1765" alt="image" src="https://user-images.githubusercontent.com/20445415/201647346-b1a44e7d-a701-49a4-ba6a-e1b2dff84a40.png">
+
+## Toy Project
+
+### Todo App
+> [Todo App](https://lateral-lifeboat-0a9.notion.site/Todo-App-8004e69d93de43acb34ef6ad065d735a)
+
+### Gin을 활용한 CRUD
+> [CRUD App](https://lateral-lifeboat-0a9.notion.site/Gin-CRUD-854744c6ac8b4ff9badf0ad23063e03f)
