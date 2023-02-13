@@ -892,19 +892,7 @@ ___
 > [json](https://github.com/FDongFDong/go_language_practice/blob/main/json/json.go)
 ___
 
-## Ethereum Core Source를 이용한 Explorer 개발
 
-- Block event 데이터 처리하기
-[go-ethereum/ethclient](https://github.com/ethereum/go-ethereum/tree/master/ethclient)
-[go-ethereum/core/types](https://github.com/ethereum/go-ethereum/tree/master/core/types)
-
-> [BlockListner.go](https://github.com/FDongFDong/go_language_practice/tree/main/explorer)
-
-- Block 정보 가져오기
-- Transaction 정보 가져오기
-- ERC20 토큰 정보 가져오기
-
-<img width="1765" alt="image" src="https://user-images.githubusercontent.com/20445415/201647346-b1a44e7d-a701-49a4-ba6a-e1b2dff84a40.png">
 
 ## Toy Project
 
